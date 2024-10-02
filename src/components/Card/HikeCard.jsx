@@ -10,32 +10,32 @@ import Image5 from '../../assets/The-Tetons.jpg';
 const categories = [
     {
         id: 1,
-        title: "hats",
+        title: "DEC 24",
         image: Image
     },
     {
         id: 2,
-        title: "jackets",
+        title: "DEC 28",
         image: Image1
     },
     {
         id: 3,
-        title: "sneakers",
+        title: "JAN 02",
         image: Image2
     },
     {
         id: 4,
-        title: "womens",
+        title: "JAN 14",
         image: Image3
     },
     {
         id: 5,
-        title: "mens",
+        title: "FEB 16",
         image: Image4
     },
     {
         id: 5,
-        title: "mens",
+        title: "FEB 22",
         image: Image5
     }
 ];

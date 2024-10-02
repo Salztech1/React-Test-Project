@@ -12,31 +12,37 @@ const followSuggestions = [
     id: 1,
     name: 'Salome Njinda',
     person: person,
+    username: '@salome04'
   },
   {
     id: 2,
     name: ' Ashu Boris',
     person: person1,
+    username: '@boris34'
   },
   {
     id: 3,
     name: 'Foletia Fabiola',
     person: person2,
+    username: '@fabiola09'
   },
   {
     id: 4,
     name: 'Nkwi Cyril',
     person: person3,
+    username: '@cyril224'
   },
   {
     id: 5,
     name: 'Kenne Suzy',
     person: person4,
+    username: '@suzy45'
   },
   {
     id: 6,
     name: 'Petite Jesus',
     person: person5,
+    username: '@jesus778'
   },
 ];
 
@@ -47,7 +53,7 @@ const FollowSuggestion = () => {
   };
 
   return (
-    <div className=" p-4">
+    <div className="bg-zinc-800 p-4 mt-5 mr-5 rounded-md text-sm">
       <h2 className="text-lg font-semibold mb-4">Who to follow</h2>
       <ul>
         {followSuggestions.map((suggestion) => (
@@ -59,6 +65,7 @@ const FollowSuggestion = () => {
             />
             <div className="flex-grow">
               <p className="text-md ">{suggestion.name}</p>
+              <p className='text-xs'>{suggestion.username}</p>
             </div>
             <Button type='button' buttonType='follow' >Follow</Button>
             {/* <button className=" px-4 py-1 rounded " >

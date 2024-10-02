@@ -3,6 +3,7 @@ import Profile from '../components/Profile/Profile';
 import HikeCart from '../components/Card/HikeCard';
 import Sort from '../components/Sort';
 import FollowSuggestion from '../components/Follow/FollowSuggestion';
+import NewsSection from '../components/News/NewsSession';
 
 function Home() {
     return (
@@ -31,6 +32,7 @@ function Home() {
           
             <div className='col-span-3'>
                 <FollowSuggestion/>
+                <NewsSection/>
             </div>
         </div>
     );
