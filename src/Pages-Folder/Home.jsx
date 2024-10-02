@@ -1,25 +1,37 @@
 import React from 'react';
 import Profile from '../components/Profile/Profile';
+import HikeCart from '../components/Card/HikeCard';
+import Sort from '../components/Sort';
+import FollowSuggestion from '../components/Follow/FollowSuggestion';
 
 function Home() {
     return (
-        <div className='flex columns-12'>
-            <div >
+        <div className='grid grid-cols-12 gap-4'>
+           
+            <div className='col-span-3'>
                 <Profile
-                className='columns-2'
-                    name={'Njinda Salome'}
-                    username={'@Salome04'}
-                    followers={'4.6k'}
-                    following={'4.6k'}
-                    events={'4.6k'} />
+                    name='Njinda Salome'
+                    username='@Salome04'
+                    followers='4.6k'
+                    following='4.6k'
+                    events='4.6k'
+                />
             </div>
-            <div className='columns-6'>
-                Hello World
+            
+           
+            <div className='col-span-6'>
+                <div className='flex mt-6'>
+                <h2 className='text-lg font-semibold font-sans'>Upcoming Hikes</h2>
+                <Sort className='ml-auto'/>
+                </div>
+                
+                <HikeCart />
             </div>
-            <div className='columns-2'>
-                Hello World
+            
+          
+            <div className='col-span-3'>
+                <FollowSuggestion/>
             </div>
-
         </div>
     );
 }
