@@ -1,6 +1,5 @@
 import React from 'react'
-//import { Fragment } from "react";
-import { Outlet, Link } from "react-router-dom";
+import {  Link } from "react-router-dom";
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import Person from '../../assets/my image.jpg'
 
@@ -8,15 +7,16 @@ import Person from '../../assets/my image.jpg'
 
 const Navbar = () => {
   return (
-    <div className=''>
-      <div className='flex   bg-zinc-800 pt-3 pb-3'>
+    <div>
+      <div className='flex bg-zinc-800 pt-3 pb-3'>
 
         <div className='columns-2 mt-2 ml-4 '>
-          <Link className="" to='/'>
+          <Link >
             <button className='bg-orange-300 rounded-md pl-2 pr-2 pt-1 pb-1'>
             <i class="bi bi-pencil-square"></i>
             </button>
           </Link>
+          
           <span className='ml-2'>
             <input type="search" placeholder='Search' className='p-1 bg-zinc-700 rounded-md'   />
           </span>
@@ -57,7 +57,7 @@ const Navbar = () => {
         </div>
 
       </div>
-      <Outlet />
+     
     </div>
   )
 }

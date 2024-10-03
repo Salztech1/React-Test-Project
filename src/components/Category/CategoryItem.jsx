@@ -15,8 +15,8 @@ const CategoryItem = ({ categoryA }) => {
             {/* Top right text */}
             <div className="absolute inset-0 bg-opacity-50 flex flex-col text-right text-white">
                 <div className='bg-gray-950  w-12 rounded-md inline-block mt-3 mr-3 text-center ml-48'>
-                    <h2 className="text-xl font-bold">{month}</h2>
-                    <p className="text-lg font-normal">{day}</p>
+                    <h2 className="text-xs text-zinc-400 font-bold">{month}</h2>
+                    <p className=" font-normal">{day}</p>
                 </div>
             </div>
 
