@@ -1,7 +1,7 @@
 import React from 'react';
 import NewsItem from './NewsItem';
-import newsImage1 from '../../assets/Mountain.jpg';  // Example image
-import newsImage2 from '../../assets/Mountain-2.jpg';  // Example image
+import newsImage1 from '/images/Mountain.jpg';  // Example image
+import newsImage2 from '/images/Mountain-2.jpg';  // Example image
 
 const newsData = [
   {
@@ -18,12 +18,12 @@ const newsData = [
 
 const NewsSection = () => {
   return (
-    <div className=" bg-zinc-800 mr-4 rounded-md">
+    <div className=" bg-social-bg-200 mr-4 rounded-md">
       {newsData.map((news) => (
-        <NewsItem 
-          key={news.id} 
-          image={news.image}  
-          description={news.description} 
+        <NewsItem
+          key={news.id}
+          image={news.image}
+          description={news.description}
         />
       ))}
     </div>

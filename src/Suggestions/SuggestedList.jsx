@@ -1,6 +1,6 @@
 import React from 'react';
-import suggestedImage from '../assets/The-Tetons.jpg'
-import suggestedImage1 from '../assets/Mountain-5.jpg'
+import suggestedImage from '/images/The-Tetons.jpg'
+import suggestedImage1 from '/images/Mountain-5.jpg'
 
 
 const SuggestedList = () => {

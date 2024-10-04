@@ -1,11 +1,14 @@
 .join {
-    background-color: orange;
-    color: white;
+    color: #ffd37d;
+    border: 1px solid #ffd37d;
+    padding: 0px 25px;
+    border-radius: 20px;
+    margin-left: 58%;
 }
 
 .follow {
-    color: rgb(236, 198, 129);
-    border: 1px solid rgb(236, 198, 129);;
+    color: #ffd37d;
+    border: 1px solid #ffd37d;
     padding: 0px 5px;
     border-radius: 20px;
 

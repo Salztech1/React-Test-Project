@@ -1,5 +1,5 @@
-import React from 'react';
-import CategoryItem from '../Category/CategoryItem';
+import React from "react";
+import CategoryItem from "../Category/CategoryItem";
 
 const Directory = ({ categoriesA }) => {
   return (

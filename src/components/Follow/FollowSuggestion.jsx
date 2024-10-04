@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
-import person from '../../assets/Salome.png';
-import person1 from '../../assets/Boris.jpeg';
-import person2 from '../../assets/Fabiola.png';
-import person3 from '../../assets/Cyril.jpeg';
-import person4 from '../../assets/Suzzy.jpeg';
-import person5 from '../../assets/Petite-Jesus.jpeg';
+import person from '/images/Salome.png';
+import person1 from '/images/Boris.jpeg';
+import person2 from '/images/Fabiola.png';
+import person3 from '/images/Cyril.jpeg';
+import person4 from '/images/Suzzy.jpeg';
+import person5 from '/images/Petite-Jesus.jpeg';
 import Button from '../Button/Button';
 
 const initialFollowSuggestions = [
@@ -57,7 +57,7 @@ const FollowSuggestion = () => {
   };
 
   return (
-    <div className="bg-zinc-800 p-4 mt-5 mr-5 rounded-md text-sm">
+    <div className="bg-social-bg-200 p-4 mt-5 mr-5 rounded-md text-sm">
       <h2 className="text-lg font-semibold mb-4">Who to follow</h2>
       <ul>
         {initialFollowSuggestions.map((suggestion) => (
@@ -65,39 +65,44 @@ const FollowSuggestion = () => {
             <img
               src={suggestion.person}
               alt={suggestion.name}
-              className="w-12 h-12 rounded-full mr-3" 
+              className="w-12 h-12 rounded-full mr-3"
             />
             <div className="flex-grow">
               <p className="text-md">{suggestion.name}</p>
-              <p className='text-xs'>{suggestion.username}</p>
+              <p className="text-xs">{suggestion.username}</p>
             </div>
-            <Button type='button' buttonType='follow'>Follow</Button>
+            <Button type="button" buttonType="follow">
+              Follow
+            </Button>
           </li>
         ))}
-        
+
         {/* Show more people if "View More" is clicked */}
-        {showMore && moreFollowSuggestions.map((suggestion) => (
-          <li key={suggestion.id} className="flex items-center mb-4">
-            <img
-              src={suggestion.person}
-              alt={suggestion.name}
-              className="w-12 h-12 rounded-full mr-3" 
-            />
-            <div className="flex-grow">
-              <p className="text-md">{suggestion.name}</p>
-              <p className='text-xs'>{suggestion.username}</p>
-            </div>
-            <Button type='button' buttonType='follow'>Follow</Button>
-          </li>
-        ))}
+        {showMore &&
+          moreFollowSuggestions.map((suggestion) => (
+            <li key={suggestion.id} className="flex items-center mb-4">
+              <img
+                src={suggestion.person}
+                alt={suggestion.name}
+                className="w-12 h-12 rounded-full mr-3"
+              />
+              <div className="flex-grow">
+                <p className="text-md">{suggestion.name}</p>
+                <p className="text-xs">{suggestion.username}</p>
+              </div>
+              <Button type="button" buttonType="follow">
+                Follow
+              </Button>
+            </li>
+          ))}
       </ul>
 
       {/* View More / View Less text */}
       <p
-        className="mt-4 text-orange-300 cursor-pointer text-center"
+        className="mt-4 text-secondary-bg-200 cursor-pointer text-center"
         onClick={toggleView}
       >
-        {showMore ? 'View Less' : 'View More'}
+        {showMore ? "View Less" : "View More"}
       </p>
     </div>
   );
