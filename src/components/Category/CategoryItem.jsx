@@ -2,9 +2,8 @@ import React from "react";
 import BlurredText from "../Card/BlurredText";
 import CardInfo from "../Card/CardInfo";
 
-const CategoryItem = ({ categoryA }) => {
-  const { image, title, distance, elevation, difficulty, images, cardData } =
-    categoryA;
+const CategoryItem = ({ hike }) => {
+  const { image, title, distance, elevation, difficulty, images, cardData } = hike;
 
   // Split the title into two parts (e.g., "JAN" and "02")
   const [month, day] = title.split(" ");

@@ -1,53 +1,9 @@
 import React, { useState } from 'react';
-import person from '/images/Salome.png';
-import person1 from '/images/Boris.jpeg';
-import person2 from '/images/Fabiola.png';
-import person3 from '/images/Cyril.jpeg';
-import person4 from '/images/Suzzy.jpeg';
-import person5 from '/images/Petite-Jesus.jpeg';
-import Button from '../Button/Button';
+import Button from "../Button/Button";
+import { initialFollowSuggestions, moreFollowSuggestions } from '../Data/Data';
 
-const initialFollowSuggestions = [
-  {
-    id: 1,
-    name: 'Salome Njinda',
-    person: person,
-    username: '@salome04'
-  },
-  {
-    id: 2,
-    name: 'Ashu Boris',
-    person: person1,
-    username: '@boris34'
-  },
-  {
-    id: 3,
-    name: 'Foletia Fabiola',
-    person: person2,
-    username: '@fabiola09'
-  },
-];
 
-const moreFollowSuggestions = [
-  {
-    id: 4,
-    name: 'Nkwi Cyril',
-    person: person3,
-    username: '@cyril224'
-  },
-  {
-    id: 5,
-    name: 'Kenne Suzy',
-    person: person4,
-    username: '@suzy45'
-  },
-  {
-    id: 6,
-    name: 'Petite Jesus',
-    person: person5,
-    username: '@jesus778'
-  },
-];
+
 
 const FollowSuggestion = () => {
   const [showMore, setShowMore] = useState(false);

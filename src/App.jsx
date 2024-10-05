@@ -1,10 +1,10 @@
 import "./App.css";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import Search from "./Pages-Folder/Search";
-import Pages from "./Pages-Folder/Pages";
-import MyNetwork from "./Pages-Folder/MyNetwork";
-import Account from "./Pages-Folder/Account";
-import Home from "./Pages-Folder/Home";
+import Search from "./Pages/Search";
+import Pages from "./Pages/Pages";
+import MyNetwork from "./Pages/MyNetwork";
+import Account from "./Pages/Account";
+import Home from "./Pages/Home";
 
 function App() {
   return (

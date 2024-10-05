@@ -1,32 +1,8 @@
 import React from 'react';
-import suggestedImage from '/images/The-Tetons.jpg'
-import suggestedImage1 from '/images/Mountain-5.jpg'
-
+import { suggestedPages } from '../components/Data/Data';
 
 const SuggestedList = () => {
-  const suggestedPages = [
-    {
-      id: 1,
-      name: 'World of Mountains',
-      image: suggestedImage,
-    },
-    {
-      id: 2,
-      name: 'Mountain of Life',
-      image: suggestedImage1,
-    },
-    {
-      id: 3,
-      name: 'Mountain of the Earch',
-      image: suggestedImage,
-    },
-    {
-        id: 4,
-        name: 'Mountain of Fire',
-        image: suggestedImage1,
-      },
-  ];
-
+  
   return (
     <div className="mt-3">
       <h6 className='ml-5 text-gray-400 text-sm'> PAGES YOU LIKE</h6>
